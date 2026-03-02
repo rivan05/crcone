@@ -1,0 +1,83 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  @apply bg-white dark:bg-gray-900 transition-colors duration-300;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white dark:bg-gray-800 bg-opacity-70 dark:bg-opacity-70 backdrop-blur-md rounded-2xl border border-white dark:border-gray-700 border-opacity-20 shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-2 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:scale-105 active:scale-95 transition-all shadow-lg;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 rounded-xl bg-gray-100 dark:bg-gray-700 border border-transparent focus:border-primary focus:outline-none dark:text-white transition-all;
+  }
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Base body styles */
+body {
+margin: 0;
+  font-family: 'Poppins', sans-serif;
+  @apply bg-violet-800 transition-colors duration-300;
+color: white !important;
+}
+
+/* Custom Components */
+@layer components {
+
+  .glass-card {
+    @apply 
+      bg-white/70 
+      dark:bg-gray-800/70 
+      backdrop-blur-md 
+      rounded-2xl 
+      border 
+      border-white/20 
+      dark:border-gray-700/20 
+      shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply 
+      px-6 
+      py-2 
+      rounded-full 
+      bg-gradient-to-r 
+      from-blue-500 
+      to-purple-500 
+      text-white 
+      font-medium 
+      hover:scale-105 
+      active:scale-95 
+      transition-all 
+      shadow-lg;
+  }
+
+  .input-field {
+    @apply 
+      w-full 
+      px-4 
+      py-2 
+      rounded-xl 
+      bg-gray-100 
+      dark:bg-gray-700 
+      border 
+      border-transparent 
+      focus:border-blue-500 
+      focus:outline-none 
+      dark:text-white 
+      transition-all;
+  }
+}
